@@ -1,8 +1,7 @@
-## github.com/fraugster/cli
+## github.com/fgrosse/cli
 
-[![Build Status](https://secure.travis-ci.org/fraugster/cli.png?branch=master)](http://travis-ci.org/fraugster/cli)
-[![GoDoc](https://godoc.org/github.com/fraugster/cli?status.svg)](https://godoc.org/github.com/fraugster/cli)
-[![License](https://img.shields.io/github/license/fraugster/cli.svg)](https://github.com/fraugster/cli/blob/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/fgrosse/cli?status.svg)](https://godoc.org/github.com/fgrosse/cli)
+[![License](https://img.shields.io/github/license/fgrosse/cli.svg)](https://github.com/fgrosse/cli/blob/master/LICENSE)
 
 Package `cli` implements utility functions for running command line applications.
 
@@ -15,7 +14,7 @@ The following simple features are currently implemented:
 
 CLI applications often perform similar tasks such as handling stop signals, reading
 from stdin and printing results to stdout. This package provides these functions
-in a single and coherent repository. Applications built with `github.com/fraugster/cli`
+in a single and coherent repository. Applications built with `github.com/fgrosse/cli`
 treat `context.Context` as first class citizen to remain responsive and implement
 graceful shutdown. Naturally this is visible when consuming (multi-line) input
 from stdin.  The `cli.Print` function is especially useful since it encourages
@@ -25,7 +24,7 @@ to pipe the results of one application into another (e.g. `my-app -o=json | jq â
 ## Installation 
 
 ```sh
-$ go get github.com/fraugster/cli
+$ go get github.com/fgrosse/cli
 ```
 
 ## Usage
@@ -39,7 +38,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fraugster/cli"
+	"github.com/fgrosse/cli"
 )
 
 func main() {
